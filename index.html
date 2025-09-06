@@ -4,7 +4,7 @@
 	<title>Food Order Form</title>
 	<style>
 		body {
-			font-family: itallic, sans-serif;
+			font-family: Arial, sans-serif;
 		}
 		.container {
 			width: 50%;
@@ -26,3 +26,44 @@
 			border: 1px solid #ccc;
 		}
 		button[type="submit"] {
+			width: 100%;
+			height: 40px;
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		button[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Food Order Form</h2>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="food">Select Food:</label>
+			<select id="food" name="food">
+				<option value="Pizza">Pizza</option>
+				<option value="Burger">Burger</option>
+				<option value="Sandwich">Sandwich</option>
+				<option value="Salad">Salad</option>
+			</select>
+
+			<label for="quantity">Quantity:</label>
+			<input type="number" id="quantity" name="quantity" required>
+
+			<label for="address">Delivery Address:</label>
+			<textarea id="address" name="address" rows="5" cols="30" required></textarea>
+
+			<button type="submit">Order Now</button>
+		</form>
+	</div>
+</body>
+</html>
+
